@@ -1,0 +1,33 @@
+{
+  "name": "nuxt-typescript",
+  "version": "1.0.0",
+  "description": "Example for using Typescript &amp; vuex-module-decorators on Nuxt.js",
+  "author": "kenji suzuki",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "ts-node": "^8.3.0",
+    "vue-property-decorator": "^8.2.1",
+    "vuex-module-decorators": "^0.10.1"
+  },
+  "devDependencies": {
+    "@nuxt/typescript": "^2.8.1",
+    "@nuxtjs/eslint-config": "^1.1.2",
+    "@nuxtjs/eslint-config-typescript": "^0.1.2",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "prettier": "^1.18.2"
+  }
+}
