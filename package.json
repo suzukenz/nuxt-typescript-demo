@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.3.1",
-    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/axios": "^5.8.0",
     "nuxt": "^2.10.0",
     "vue-property-decorator": "^8.3.0"
   },
@@ -23,6 +23,7 @@
     "@nuxtjs/eslint-config": "^0.0.1",
     "@nuxtjs/eslint-config-typescript": "^1.0.0",
     "@nuxtjs/eslint-module": "^0.0.1",
+    "@types/jquery": "^3.3.31",
     "eslint": "^5.15.1",
     "eslint-config-prettier": "^4.1.0",
     "eslint-config-standard": ">=12.0.0",

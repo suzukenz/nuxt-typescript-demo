@@ -2,6 +2,7 @@ import { Configuration } from '@nuxt/types'
 
 const config: Configuration = {
   mode: 'spa',
+  serverMiddleware: ['~/server/'],
   /*
    ** Headers of the page
    */
@@ -29,7 +30,7 @@ const config: Configuration = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/error-handler.ts'],
   /*
    ** Nuxt.js modules
    */
