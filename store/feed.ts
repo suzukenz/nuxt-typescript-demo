@@ -17,14 +17,14 @@ export default class Feed extends VuexModule implements IFeedState {
   @Action
   async loadPosts() {
     const posts = await fetchPosts()
-    posts.forEach(post => {
+    posts.forEach((post) => {
       this.addPost(post)
     })
   }
 }
 
 const fetchPosts = (): Promise<Post[]> => {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     const dummyPosts: Post[] = [
       {
         id: 1,

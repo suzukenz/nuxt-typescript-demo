@@ -1,6 +1,6 @@
-import NuxtConfiguration from '@nuxt/config'
+import { Configuration } from '@nuxt/types'
 
-const config: NuxtConfiguration = {
+const config: Configuration = {
   mode: 'spa',
   /*
    ** Headers of the page
@@ -33,7 +33,17 @@ const config: NuxtConfiguration = {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/axios',
+    '@nuxtjs/eslint-module'
+  ],
+  buildModules: ['@nuxt/typescript-build'],
+  /*
+   ** Axios module configuration
+   ** See https://axios.nuxtjs.org/options
+   */
+  axios: {},
   /*
    ** Build configuration
    */
@@ -42,7 +52,9 @@ const config: NuxtConfiguration = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      if (!config.module) return
+      if (!config.module) {
+        return
+      }
 
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
@@ -53,6 +65,11 @@ const config: NuxtConfiguration = {
           exclude: /(node_modules)/
         })
       }
+    }
+  },
+  typescript: {
+    typeCheck: {
+      eslint: true
     }
   }
 }
