@@ -1,6 +1,6 @@
 # nuxt-typescript-demo
 
-> Example for using Typescript &amp; vuex-module-decorators on Nuxt.js
+Example for using Typescript &amp; vuex-module-decorators on Nuxt.js
 
 ## Build Setup
 

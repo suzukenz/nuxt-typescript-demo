@@ -1,33 +1,41 @@
 {
-  "name": "nuxt-typescript",
+  "name": "nuxt-typescript-demo",
   "version": "1.0.0",
   "description": "Example for using Typescript &amp; vuex-module-decorators on Nuxt.js",
-  "author": "kenji suzuki",
+  "author": "suzukenz",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "precommit": "npm run lint",
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "ts-node": "^8.3.0",
-    "vue-property-decorator": "^8.2.1",
-    "vuex-module-decorators": "^0.10.1"
+    "@nuxt/typescript-runtime": "^0.3.1",
+    "@nuxtjs/axios": "^5.3.6",
+    "nuxt": "^2.10.0",
+    "vue-property-decorator": "^8.3.0"
   },
   "devDependencies": {
-    "@nuxt/typescript": "^2.8.1",
-    "@nuxtjs/eslint-config": "^1.1.2",
-    "@nuxtjs/eslint-config-typescript": "^0.1.2",
-    "@typescript-eslint/eslint-plugin": "^2.0.0",
-    "@typescript-eslint/parser": "^2.0.0",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-loader": "^2.2.1",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-vue": "^5.2.3",
-    "prettier": "^1.18.2"
+    "@nuxt/typescript-build": "^0.5.0",
+    "@nuxtjs/eslint-config": "^0.0.1",
+    "@nuxtjs/eslint-config-typescript": "^1.0.0",
+    "@nuxtjs/eslint-module": "^0.0.1",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": ">=12.0.0",
+    "eslint-plugin-import": ">=2.16.0",
+    "eslint-plugin-jest": ">=22.3.0",
+    "eslint-plugin-node": ">=8.0.1",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": ">=4.0.1",
+    "eslint-plugin-standard": ">=4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.16.4",
+    "vuex-module-decorators": "^0.11.0"
   }
 }
