@@ -2,19 +2,23 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
   },
   extends: [
-    'prettier',
-    'prettier/vue',
-    'plugin:prettier/recommended',
-    '@nuxtjs',
     '@nuxtjs/eslint-config-typescript',
-    'plugin:nuxt/recommended'
+    'eslint:recommended',
+    // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
+    // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
+    'plugin:vue/recommended',
+    'plugin:prettier/recommended',
   ],
-  plugins: ['prettier'],
+  // required to lint *.vue files
+  plugins: ['vue'],
   // add your custom rules here
   rules: {
-    'space-before-function-paren': 0
-  }
+    semi: [2, 'never'],
+    'no-console': 'off',
+    'vue/max-attributes-per-line': 'off',
+    'prettier/prettier': ['error', { semi: false }],
+  },
 }

@@ -29,18 +29,18 @@ const fetchPosts = (): Promise<Post[]> => {
       {
         id: 1,
         title: 'Hello World',
-        description: 'This is my first post.'
+        description: 'This is my first post.',
       },
       {
         id: 2,
         title: 'My Second Post',
-        description: 'This is fake post !'
+        description: 'This is fake post !',
       },
       {
         id: 3,
         title: 'Try Nuxt.js',
-        description: 'I am a beginner in Nuxt.js.'
-      }
+        description: 'I am a beginner in Nuxt.js.',
+      },
     ]
     resolve(dummyPosts)
   })

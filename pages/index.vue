@@ -11,8 +11,8 @@ import { feedStore } from '~/store'
 
 @Component({
   components: {
-    PostPreview
-  }
+    PostPreview,
+  },
 })
 export default class FeedPage extends Vue {
   get posts() {
